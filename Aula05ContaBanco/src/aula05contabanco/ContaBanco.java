@@ -57,7 +57,7 @@ public class ContaBanco {
     }
     
     public void depositar(float valor) {
-        if (this.getStatus() == true) {
+        if (this.getStatus()) {
         this.setSaldo(this.getSaldo() + valor); 
         System.out.println("Depósito realizado na conta de " + this.getDono() + "! Seu saldo atual é de " + 
                 this.getSaldo() + "!");
@@ -68,7 +68,7 @@ public class ContaBanco {
     }
     
     public void sacar(float valor) {
-        if (this.getStatus() == true) {
+        if (this.getStatus()) {
             if (this.getSaldo() >= valor) {
                 this.setSaldo(this.getSaldo() - valor);
                 System.out.println("Saque realizado na conta de " + this.getDono() + "!");

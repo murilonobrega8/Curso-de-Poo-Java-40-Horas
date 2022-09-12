@@ -20,7 +20,10 @@ public class Aula05ContaBanco {
         p1.setDono("Jubileu");
         p1.abrirConta("CP");
         p1.depositar(300);
+        p1.pagarMensal();
         p1.sacar(450);
+        p1.fecharConta();
+        p1.sacar(430);
         p1.fecharConta();
         
         p1.EstadoAtual();
@@ -31,7 +34,14 @@ public class Aula05ContaBanco {
         p2.abrirConta("CC");
         p2.depositar(500);
         p2.sacar(100);
-                
+        p2.pagarMensal();
+        p2.sacar(500);
+        p2.sacar(430);
+        p2.pagarMensal();
+        p2.fecharConta();
+        p2.depositar(4);
+        p2.fecharConta();
+        
         p2.EstadoAtual();
     }
     
