@@ -15,28 +15,28 @@ public class Aula11ProjetoPessoas2 {
      */
     public static void main(String[] args) {
         // TODO code application logic here
-        Pessoa p1 = new Pessoa();
-        Aluno p2 = new Aluno();
-        Professor p3 = new Professor();
-        Funcionario p4 = new Funcionario();
+        /*Pessoa p1 = new Pessoa() Classe abstrata não gera Objeto;*/
+        Visitante v1 = new Visitante();
+        v1.setNome("Juvenal");
+        v1.setIdade(22);
+        v1.setSexo("M");
+        System.out.println(v1.toString());
         
-        p1.setNome("Pedro");
-        p2.setNome("Maria");
-        p3.setNome("Cláudio");
-        p4.setNome("Fabiana");
+        Aluno a1 = new Aluno();
+        a1.setNome("Cláudio");
+        a1.setMatricula(13001);
+        a1.setCurso("Informática");
+        a1.setIdade(16);
+        a1.setSexo("M");
+        a1.pagarMensalidade();
+        System.out.println(a1.toString());
         
-        p1.setSexo("M");
-        p4.setSexo("F");
-        p2.setIdade(18);
-        
-        p2.setCurso("Informática");
-        p3.setSalario(2500.75f);
-        p4.setSetor("Estoque");
-        
-        System.out.println(p1.toString());
-        System.out.println(p2.toString());
-        System.out.println(p3.toString());
-        System.out.println(p4.toString());
+        Bolsista b1 = new Bolsista();
+        b1.setNome("Jubileu");
+        b1.setMatricula(13002);
+        b1.setBolsa(12.5f);
+        b1.setSexo("M");
+        b1.pagarMensalidade();
+        System.out.println(b1.toString());
     }
-    
 }

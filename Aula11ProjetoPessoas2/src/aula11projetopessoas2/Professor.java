@@ -9,7 +9,7 @@ package aula11projetopessoas2;
  * @author murilonobrega8
  */
 public class Professor extends Pessoa {
-    private String especialidade;
+    /*private String especialidade;
     private float salario;
     
     public void receberAumento(float aumento) {
@@ -30,7 +30,7 @@ public class Professor extends Pessoa {
 
     public void setSalario(float salario) {
         this.salario = salario;
-    }
+    }*/
     
     
 }

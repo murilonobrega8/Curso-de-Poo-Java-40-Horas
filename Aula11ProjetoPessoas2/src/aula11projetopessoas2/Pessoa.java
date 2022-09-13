@@ -8,7 +8,7 @@ package aula11projetopessoas2;
  *
  * @author murilonobrega8
  */
-public class Pessoa {
+public abstract class Pessoa {
     // Atributos
     private String nome, sexo;
     private int idade;
@@ -19,12 +19,6 @@ public class Pessoa {
     }
     
     // Métodos Epeciais
-    /*public Pessoa(String nome, String sexo, int idade) {
-        this.nome = nome;
-        this.sexo = sexo;
-        this.idade = idade;
-    }*/
-
     public String getNome() {
         return nome;
     }
@@ -51,7 +45,7 @@ public class Pessoa {
 
     @Override
     public String toString() {
-        return "Pessoa{" + "nome=" + nome + ", sexo=" + sexo + ", idade=" + idade + '}';
+        return "Dados {nome = " + nome + ", sexo = " + sexo + ", idade = " + idade + "}";
     }
     
     
